@@ -1,0 +1,11 @@
+### Source: https://kubernetes.io/docs/reference/kubectl/cheatsheet/ ### 
+
+# set alias  
+
+alias k=kubectl
+complete -o default -F __start_kubectl k
+
+# set autocomplete for kuberenetes
+
+source <(kubectl completion bash)
+echo "source <(kubectl completion bash)"
